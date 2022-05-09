@@ -19,8 +19,8 @@
             <input type="password" class="form-control" id="Password" placeholder="Password">
         </div>
         <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Reneber me</label>
+            <input type="checkbox" class="form-check-input" id="Reneber" value="true">
+            <label class="form-check-label" for="Reneber">Reneber me</label>
         </div>
         <button type="submit" class="btn btn-primary">login</button>
         <button type="submit" class="btn btn-primary">register</button>
@@ -29,6 +29,11 @@
 </body>
 </html>
 <?php
-    if ($_COOKIE(biblioteca[username]))
+    // $user=$_POST["User name"];
+    // $password=$_POST["Password"];
+    // if(isset($_COOKIE["biblioteca"])){
+    //     if(isset($))
+    // }
+    
 
 ?>
