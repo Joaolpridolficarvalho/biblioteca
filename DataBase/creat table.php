@@ -2,11 +2,12 @@
 
 
 
-    require "conetion.php";
+    if (require "connection.php")
+        echo "passei aqui";
 
 
 
-    $table = "User";
+    $table = "user";
 
 
 
@@ -18,25 +19,42 @@
 
     //metódo executa uma consulta no banco de dados, retorna V ou F
 
-    if($conetion->query($comandosql)){
+    if($connection->query($comandosql)){
 
-        echo "Base de dados criada com sucesso!";
+        echo "tabela criada com sucesso!";
 
     }else{
 
-        echo "Erro ao criar base de dados!";
+        echo "Erro ao criar tabela!";
+        
 
     }
+    
+    // $table = "livros";
 
 
 
-    //ternário
+    // $comandosql = "Create table $table";
 
-    // echo $conexao->query($comandosql)?"Base de dados criada com sucesso!":"Erro ao criar base de dados!";
+   
+
+    // if($connection->query($comandosql)){
+
+    //     echo "tabela criada com sucesso!";
+
+    // }else{
+
+    //     echo "Erro ao criar tabela!";
+        
+
+    // }
 
 
 
-    $conexao->close();
+
+
+
+    $connection->close();
 
 
 

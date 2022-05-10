@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09-Maio-2022 às 15:12
+-- Tempo de geração: 10-Maio-2022 às 20:45
 -- Versão do servidor: 10.4.20-MariaDB
 -- versão do PHP: 8.0.8
 
@@ -24,40 +24,34 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `user`
+-- Estrutura da tabela `livros`
 --
 
-CREATE TABLE `user` (
-  `Name User` varchar(50) NOT NULL,
-  `Id` int(200) NOT NULL,
-  `Email` varchar(225) NOT NULL,
-  `Password` varchar(90) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE `livros` (
+  `autor` varchar(20) DEFAULT NULL,
+  `titulo` varchar(40) DEFAULT NULL,
+  `area` varchar(16) DEFAULT NULL,
+  `ano` smallint(6) DEFAULT NULL,
+  `tombo` char(10) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `user`
+-- Extraindo dados da tabela `livros`
 --
-
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices para tabela `user`
+-- Índices para tabela `livros`
 --
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`Id`);
-
---
--- AUTO_INCREMENT de tabelas despejadas
---
-
---
--- AUTO_INCREMENT de tabela `user`
---
-ALTER TABLE `user`
-  MODIFY `Id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `livros`
+  ADD PRIMARY KEY (`tombo`),
+  ADD KEY `autor` (`autor`),
+  ADD KEY `titulo` (`titulo`(20)),
+  ADD KEY `area` (`area`(4)),
+  ADD KEY `ano` (`ano`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
