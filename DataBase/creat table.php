@@ -2,7 +2,7 @@
 
 
 
-    if (require "connection.php")
+    if (require_once "connection.php")
         echo "passei aqui";
 
 

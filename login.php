@@ -10,13 +10,13 @@
 <body>
     <form action="index.php" method="POST">
         <div class="form-group">
-            <label for="User name">User Name</label>
-            <input type="User name" class="form-control" id="User name" aria-describedby="User name" placeholder="User name">
-            <small id="use name" class="form-text text-muted"></small>
+            <label for="userName">User Name</label>
+            <input type="text" class="form-control" id="userName" name="userName"aria-describedby="User name" placeholder="User name">
+            <small id="userName" class="form-text text-muted"></small>
         </div>
         <div class="form-group">
-            <label for="Password">Password</label>
-            <input type="password" class="form-control" id="Password" placeholder="Password">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="password">
         </div>
         <div class="form-group form-check">
             <input type="checkbox" class="form-check-input" id="Reneber" value="true">
@@ -29,11 +29,10 @@
 </body>
 </html>
 <?php
-    // $user=$_POST["User name"];
-    // $password=$_POST["Password"];
-    // if(isset($_COOKIE["biblioteca"])){
-    //     if(isset($))
-    // }
-    
+   
+   if (isset($_POST[''])){
+    $userName=$_POST['userName'];
+    $password=$_POST['password'];
+}
 
 ?>

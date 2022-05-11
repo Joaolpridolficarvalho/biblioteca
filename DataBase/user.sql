@@ -28,10 +28,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `user` (
-  `Name User` varchar(50) NOT NULL,
-  `Id` int(200) NOT NULL,
-  `Email` varchar(225) NOT NULL,
-  `Password` varchar(90) NOT NULL
+  `Name User` varchar(50) ,
+  `Id` int(200) ,
+  `Email` varchar(225) ,
+  `Password` varchar(90) 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -57,7 +57,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT de tabela `user`
 --
 ALTER TABLE `user`
-  MODIFY `Id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Id` int(200) NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

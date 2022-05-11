@@ -38,7 +38,7 @@ CREATE TABLE `livros` (
 --
 -- Extraindo dados da tabela `livros`
 --
-
+                              
 --
 -- Índices para tabelas despejadas
 --

@@ -11,7 +11,7 @@
         die ("Erro: $connection->connect_errno");
     }
     else{
-        echo "ok";
+                                                                        
     }
 
 ?>
